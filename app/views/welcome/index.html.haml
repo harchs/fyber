@@ -1,0 +1,17 @@
+.container-fluid
+  .row-fluid
+    .span2
+      %form
+        .form-group
+          %label{for: "uuid"} UUID
+          %input#uuid.form-control{placeholder: "UUID", type: "text"}/
+        .form-group
+          %label{for: "pub0"} Pub0
+          %input#pub0.form-control{placeholder: "Pub0", type: "text"}/
+        .form-group
+          %label{for: "page"} Page
+          %input#page{type: "number", min: 1}/
+        %button.btn.btn-default{type: "submit"} Submit
+    .span10
+
+
