@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 
+gem 'haml', '~> 4.0.5'
 gem 'httparty', '~> 0.13.5'
 
 gem 'jquery-rails'
