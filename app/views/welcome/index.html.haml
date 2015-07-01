@@ -1,17 +1,19 @@
 .container-fluid
   .row-fluid
     .span2
-      %form
+      = form_tag offers_path, method: :get, remote: true do
         .form-group
-          %label{for: "uuid"} UUID
-          %input#uuid.form-control{placeholder: "UUID", type: "text"}/
+          = label_tag 'uuid', 'UUID'
+          = text_field_tag 'offer[uuid]', nil, placeholder: 'UUID', id: 'uuid', class: 'form-control'
         .form-group
-          %label{for: "pub0"} Pub0
-          %input#pub0.form-control{placeholder: "Pub0", type: "text"}/
+          = label_tag 'pub0', 'Pub0'
+          = text_field_tag 'offer[pub0]', nil, placeholder: 'UUID', id: 'pub0', class: 'form-control'
         .form-group
-          %label{for: "page"} Page
-          %input#page{type: "number", min: 1}/
-        %button.btn.btn-default{type: "submit"} Submit
+          = label_tag 'page', 'Page'
+          = number_field_tag 'offer[page]', nil, class: 'page', min: 1
+        = submit_tag 'Submit'
     .span10
+
+
 
 
