@@ -1,0 +1,20 @@
+defaults: &defaults
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  template: template0
+
+development:
+  <<: *defaults
+  database: fyber_development
+
+test:
+  <<: *defaults
+  database: fyber_test
+
+staging:
+  <<: *defaults
+  database: fyber_staging
+
+production:
+  database: fyber_production
